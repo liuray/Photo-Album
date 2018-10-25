@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="530" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AlbumController">
+   <bottom>
+      <AnchorPane prefHeight="144.0" prefWidth="530.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutY="56.0" prefHeight="144.0" prefWidth="530.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region layoutX="156.0" layoutY="30.0" prefHeight="75.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#add" prefHeight="84.0" prefWidth="136.0" text="Add">
+                     <font>
+                        <Font size="39.0" />
+                     </font></Button>
+                  <Region prefHeight="75.0" prefWidth="20.0" HBox.hgrow="SOMETIMES" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AdminController">
+   <children>
+      <ListView fx:id="listView" prefHeight="500.0" prefWidth="233.0" />
+      <Pane layoutX="263.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="564.0" fitWidth="998.0" layoutX="-41.0" layoutY="-39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@adminPic.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="Add" layoutX="316.0" layoutY="119.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="70.0" text="Add" />
+      <Button fx:id="Delete" layoutX="316.0" layoutY="220.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="70.0" text="Delete" />
+      <Button fx:id="Close" layoutX="316.0" layoutY="333.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="70.0" text="Close" />
+   </children>
+</AnchorPane>

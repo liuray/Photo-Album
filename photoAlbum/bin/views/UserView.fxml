@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UserController">
+   <children>
+      <Pane layoutX="-16.0" layoutY="-25.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="779.0" fitWidth="1350.0" layoutX="-492.0" layoutY="-108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@adminPic.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="AlbumList" layoutX="8.0" layoutY="9.0" onMouseClicked="#setDisability" prefHeight="524.0" prefWidth="250.0" />
+      <Button fx:id="Delete" layoutX="279.0" layoutY="116.0" mnemonicParsing="false" onAction="#delete" prefHeight="59.0" prefWidth="97.0" text="Delete" />
+      <Button fx:id="Add" layoutX="279.0" layoutY="23.0" mnemonicParsing="false" onAction="#add" prefHeight="59.0" prefWidth="97.0" text="Add" />
+      <Button fx:id="Rename" layoutX="279.0" layoutY="210.0" mnemonicParsing="false" onAction="#Rename" prefHeight="59.0" prefWidth="97.0" text="Rename" />
+      <Button fx:id="Exit" layoutX="279.0" layoutY="432.0" mnemonicParsing="false" onAction="#exit" prefHeight="59.0" prefWidth="97.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="PhotoSearcher" layoutX="279.0" layoutY="320.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="97.0" text="Searcher" />
+   </children>
+</AnchorPane>

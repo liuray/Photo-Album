@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AlbumController">
+   <top>
+      <SplitPane dividerPositions="0.026845637583892617" orientation="VERTICAL" prefHeight="73.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ListView prefHeight="90.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox prefHeight="51.0" prefWidth="598.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Region prefHeight="80.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="addTag" mnemonicParsing="false" onAction="#addTag" prefHeight="27.0" prefWidth="99.0" text="Add Tag" />
+                        <Region prefHeight="100.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="DeleteTag" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="27.0" prefWidth="118.0" text="Delete Tag" />
+                        <Region prefHeight="100.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="Caption" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Caption" prefHeight="27.0" prefWidth="75.0" text="Caption" />
+                        <Region prefHeight="100.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="move" layoutX="60.0" layoutY="30.0" mnemonicParsing="false" onAction="#move" text="move" />
+                        <Region prefHeight="31.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="delete" layoutX="37.0" layoutY="30.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+                        <Region prefHeight="31.0" prefWidth="0.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </top>
+   <bottom>
+      <ListView fx:id="listView" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
